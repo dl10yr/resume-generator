@@ -1,0 +1,66 @@
+.resume {
+  padding: 2%;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left {
+  width: 50%;
+  padding-right: 1%;
+
+  .header {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+}
+
+.right {
+  padding-left: 1%;
+  width: 50%;
+}
+
+.education,
+.licenses,
+.additional-info,
+.requests {
+  margin-bottom: 20px;
+}
+
+.education h2,
+.licenses h2,
+.additional-info h2,
+.requests h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.education table,
+.licenses table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.education th,
+.education td,
+.licenses th,
+.licenses td {
+  border: 1px solid #000;
+  padding: 5px;
+  text-align: left;
+}
+
+.additional-info textarea,
+.requests textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #000;
+  padding: 10px;
+  box-sizing: border-box;
+}
