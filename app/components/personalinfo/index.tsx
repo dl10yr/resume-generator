@@ -19,54 +19,49 @@ export const PersonalInfo: React.FC<PersonalInfoProps> = ({
   email,
 }) => {
   return (
-    <div data-container>
-      <div className="details">
-        <table>
-          <tr>
-            <th>ふりがな</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>氏名</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>生年月日</th>
-            <td>年 月 日生 (満 歳)</td>
-          </tr>
-          <tr>
-            <th>性別</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>ふりがな</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>現住所</th>
-            <td>〒</td>
-          </tr>
-          <tr>
-            <th>電話</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>ふりがな</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>連絡先</th>
-            <td>〒（現住所以外に連絡を希望する場合のみ記入）</td>
-          </tr>
-          <tr>
-            <th>電話</th>
-            <td></td>
-          </tr>
-        </table>
+    <div className="details">
+      <div className="left">
+        <div className="birthdate">年月日</div>
+        <div className="address1">
+          <div className="furigana">
+            <div className="label">ふりがな</div>
+            <div className="value">じゅうしょ</div>
+          </div>
+          <div className="kanji">
+            <div className="up">
+              <div className="label">現住所</div>
+              <div className="value">郵便番号</div>
+            </div>
+            <div className="down">住所</div>
+          </div>
+        </div>
+        <div className="address2">
+          <div className="furigana">
+            <div className="label">ふりがな</div>
+            <div className="value">じゅうしょ</div>
+          </div>
+          <div className="kanji">
+            <div className="up">
+              <div className="label">現住所</div>
+              <div className="value">郵便番号</div>
+            </div>
+            <div className="down">住所</div>
+          </div>
+        </div>
       </div>
-      <div className="photo">
-        <p>写真を貼る位置</p>
-        <p>縦36～40mm 横24～30mm</p>
+      <div className="right">
+        <div className="seibetsu">
+          <div className="label">性別</div>
+          <div className="value">男</div>
+        </div>
+        <div className="phone1">
+          <div className="label">電話</div>
+          <div className="value">男</div>
+        </div>
+        <div className="phone2">
+          <div className="label">電話</div>
+          <div className="value">男</div>
+        </div>
       </div>
     </div>
   );

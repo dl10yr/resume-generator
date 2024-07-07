@@ -1,5 +1,9 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
+  HeaderAndPersonalInfo,
+  links as headerAndPersonalInfoLinks,
+} from "~/components/HeaderAndPersonalInfo";
+import {
   PersonalInfo,
   links as personalInfoLinks,
 } from "~/components/personalinfo";
@@ -14,6 +18,7 @@ export const meta: MetaFunction = () => {
 };
 
 export const links: LinksFunction = () => [
+  ...headerAndPersonalInfoLinks(),
   ...personalInfoLinks(),
   { rel: "stylesheet", href: styles },
 ];
@@ -22,13 +27,9 @@ export default function Preview() {
   return (
     <div className="resume">
       <div className="left">
-        <div className="header">
-          <h1>履歴書</h1>
-          <p>年 月 日現在</p>
-        </div>
+        <HeaderAndPersonalInfo />
         <PersonalInfo name="" age={13} email="" />
         <div className="education">
-          <h2>学歴・職歴（各別にまとめて書く）</h2>
           <table>
             <tr>
               <th>年 月</th>
@@ -45,7 +46,6 @@ export default function Preview() {
 
       <div className="right">
         <div className="licenses">
-          <h2>免許・資格</h2>
           <table>
             <tr>
               <th>年 月</th>

@@ -1,0 +1,39 @@
+.header-personalinfo {
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    width: calc(100% - 25%);
+
+    .name {
+      .furigana {
+        display: flex;
+        .label {
+          width: 30%;
+        }
+        .value {
+          width: 70%;
+        }
+      }
+      .kanji {
+        display: flex;
+        .label {
+          width: 30%;
+        }
+        .value {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  .right {
+    width: 25%;
+    .photo {
+      border: 1px solid #000;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  }
+}
