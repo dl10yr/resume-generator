@@ -1,25 +1,30 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import { Education, links as educationLinks } from "~/components/Education";
 import {
   HeaderAndPersonalInfo,
   links as headerAndPersonalInfoLinks,
 } from "~/components/HeaderAndPersonalInfo";
+import { Licenses, links as licensesLinks } from "~/components/Licenses";
+import { Motivation, links as motivationLinks } from "~/components/Motivation";
 import {
   PersonalInfo,
   links as personalInfoLinks,
 } from "~/components/personalinfo";
+import { Requests, links as requestsLinks } from "~/components/Requests";
 
 import styles from "~/styles/preview.css?url";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix SPA" },
-    { name: "description", content: "Welcome to Remix (SPA Mode)!" },
-  ];
+  return [{ title: "resume" }];
 };
 
 export const links: LinksFunction = () => [
   ...headerAndPersonalInfoLinks(),
   ...personalInfoLinks(),
+  ...educationLinks(),
+  ...licensesLinks(),
+  ...motivationLinks(),
+  ...requestsLinks(),
   { rel: "stylesheet", href: styles },
 ];
 
@@ -29,44 +34,14 @@ export default function Preview() {
       <div className="left">
         <HeaderAndPersonalInfo />
         <PersonalInfo name="" age={13} email="" />
-        <div className="education">
-          <table>
-            <tr>
-              <th>年 月</th>
-              <th>学歴・職歴</th>
-            </tr>
-            {/* <!-- Sample entries --> */}
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-        </div>
+        <Education />
       </div>
 
       <div className="right">
-        <div className="licenses">
-          <table>
-            <tr>
-              <th>年 月</th>
-              <th>免許・資格</th>
-            </tr>
-            {/* <!-- Sample entries --> */}
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-        </div>
-        <div className="additional-info">
-          <h2>志望の動機、特技、自己PR、アピールポイントなど</h2>
-          <textarea></textarea>
-        </div>
-        <div className="requests">
-          <h2>
-            本人希望記入欄（特に給料、職種、勤務時間、勤務地、その他についての希望などがあれば記入）
-          </h2>
-          <textarea></textarea>
+        <Licenses />
+        <div className="motivation-requests">
+          <Motivation />
+          <Requests />
         </div>
       </div>
     </div>
