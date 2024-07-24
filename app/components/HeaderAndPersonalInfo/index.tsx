@@ -1,19 +1,19 @@
 import { LinksFunction } from "@remix-run/node";
 import React from "react";
 
-import styles from "./styles.css?url";
+import styles from "./styles.scss?url";
 
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 export const HeaderAndPersonalInfo: React.FC = () => {
   return (
     <div className="header-personalinfo">
-      <div className="left">
-        <div className="header">
+      <div className="header-personalinfo-left">
+        <div className="header-personalinfo-left-header">
           <h1>履歴書</h1>
           <p>年 月 日現在</p>
         </div>
-        <div className="name">
+        <div className="header-personalinfo-left-name">
           <div className="furigana">
             <div className="label">ふりがな</div>
             <div className="value">やまだたろう</div>
@@ -24,7 +24,7 @@ export const HeaderAndPersonalInfo: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="right">
+      <div className="header-personalinfo-right">
         <div className="photo">
           <p>写真を貼る位置</p>
           <p>縦36～40mm 横24～30mm</p>
