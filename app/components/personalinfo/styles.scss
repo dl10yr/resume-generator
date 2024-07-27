@@ -1,0 +1,86 @@
+.details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+
+  margin-bottom: 20px;
+
+  & .details-left {
+    width: 75%;
+    border-right: 1px solid #000;
+
+    & .details-left-birthdate {
+      height: 44px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #000;
+    }
+
+    .address1 {
+      border-bottom: 1px solid #000;
+
+      .furigana {
+        height: 22px;
+        display: flex;
+        border-bottom: 1px dotted #000;
+      }
+
+      .kanji {
+        .up {
+          display: flex;
+          height: 22px;
+        }
+
+        .down {
+          display: flex;
+          height: 44px;
+        }
+      }
+    }
+
+    .address2 {
+      .furigana {
+        height: 22px;
+        display: flex;
+        border-bottom: 1px dotted #000;
+      }
+
+      .kanji {
+        .up {
+          display: flex;
+          height: 22px;
+        }
+
+        .down {
+          display: flex;
+          height: 44px;
+        }
+      }
+    }
+  }
+
+  & .details-right {
+    width: 25%;
+
+    & .seibetsu {
+      height: 44px;
+      border-top: 2px solid #000;
+      border-bottom: 1px solid #000;
+    }
+
+    & .phone-email1 {
+      height: 88px;
+      border-bottom: 1px solid #000;
+    }
+
+    & .phone-email2 {
+      height: 88px;
+    }
+  }
+}
