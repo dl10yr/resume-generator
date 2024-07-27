@@ -2,7 +2,7 @@
 import { LinksFunction } from "@remix-run/node";
 import React from "react";
 
-import styles from "./styles.css?url";
+import styles from "./styles.scss?url";
 
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
@@ -20,8 +20,10 @@ export const PersonalInfo: React.FC<PersonalInfoProps> = ({
 }) => {
   return (
     <div className="details">
-      <div className="left">
-        <div className="birthdate">年月日</div>
+      <div className="details-left">
+        <div className="details-left-birthdate">
+          <div className="value">年月日</div>
+        </div>
         <div className="address1">
           <div className="furigana">
             <div className="label">ふりがな</div>
@@ -29,8 +31,7 @@ export const PersonalInfo: React.FC<PersonalInfoProps> = ({
           </div>
           <div className="kanji">
             <div className="up">
-              <div className="label">現住所</div>
-              <div className="value">郵便番号</div>
+              <div className="label">現住所 郵便番号</div>
             </div>
             <div className="down">住所</div>
           </div>
@@ -49,18 +50,30 @@ export const PersonalInfo: React.FC<PersonalInfoProps> = ({
           </div>
         </div>
       </div>
-      <div className="right">
+      <div className="details-right">
         <div className="seibetsu">
           <div className="label">性別</div>
           <div className="value">男</div>
         </div>
-        <div className="phone1">
-          <div className="label">電話</div>
-          <div className="value">男</div>
+        <div className="phone-email1">
+          <div className="phone">
+            <div className="label">電話</div>
+            <div className="value">0120-111-111</div>
+          </div>
+          <div className="email">
+            <div className="label">Email</div>
+            <div className="value">example@example.com</div>
+          </div>
         </div>
-        <div className="phone2">
-          <div className="label">電話</div>
-          <div className="value">男</div>
+        <div className="phone-email2">
+          <div className="phone">
+            <div className="label">電話</div>
+            <div className="value">0120-111-111</div>
+          </div>
+          <div className="email">
+            <div className="label">Email</div>
+            <div className="value">example@example.com</div>
+          </div>
         </div>
       </div>
     </div>
