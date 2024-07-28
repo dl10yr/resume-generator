@@ -74,7 +74,9 @@ export default function Index() {
           style={{ display: "none" }}
           accept=".yaml,.yml"
         />
-        <button onClick={handleButtonClick}>yamlファイルを参照</button>
+        <button className="home-button" onClick={handleButtonClick}>
+          yamlファイルを参照
+        </button>
       </div>
       <div className="step">
         <h2 className="step-title">2. 顔写真を参照</h2>
@@ -86,7 +88,7 @@ export default function Index() {
           style={{ display: "none" }}
           accept=".jpg,.png"
         />
-        <button onClick={handleFaceImageButtonClick}>
+        <button className="home-button" onClick={handleFaceImageButtonClick}>
           顔写真ファイルを参照
         </button>
       </div>
@@ -95,10 +97,12 @@ export default function Index() {
         {sourceFilesData.yaml !== undefined &&
         sourceFilesData.faceImage !== undefined ? (
           <Link aria-label="作成する" to="/preview">
-            作成する
+            <button className="home-button">作成する</button>
           </Link>
         ) : (
-          <button disabled>作成する</button>
+          <button disabled className="home-button">
+            作成する
+          </button>
         )}
       </div>
     </div>

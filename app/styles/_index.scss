@@ -4,6 +4,7 @@
   align-items: center;
   padding: 20px;
   background-color: #f5f5f5;
+  min-height: 100vh;
 
   & .home-header {
     text-align: center;
@@ -38,7 +39,7 @@
   }
 }
 
-button {
+.home-button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -50,5 +51,13 @@ button {
 
   &:hover {
     background-color: #0056b3;
+  }
+
+  &:disabled {
+    background-color: grey;
+  }
+
+  &:hover :disabled {
+    background-color: grey;
   }
 }
