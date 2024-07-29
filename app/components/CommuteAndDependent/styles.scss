@@ -1,0 +1,20 @@
+.commute-and-dependent {
+  height: 66px;
+  display: flex;
+  border: 2px solid #000;
+  width: 100%;
+
+  & .commute-and-dependent-item {
+    width: 25%;
+    border-right: 1px solid #000;
+    padding: 4px;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    & .commute-and-dependent-item-label {
+      margin-bottom: 4px;
+    }
+  }
+}
