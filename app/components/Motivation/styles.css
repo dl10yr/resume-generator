@@ -2,4 +2,18 @@
   height: 100%;
   border: 2px solid hsl(0, 0%, 0%);
   margin-bottom: 20px;
+  padding: 4px;
+
+  & .motivation-title {
+    margin-bottom: 4px;
+  }
+
+  & .motivation-content {
+    white-space: pre-wrap;
+
+    & .motivation-content-link {
+      color: blue;
+      text-decoration: underline;
+    }
+  }
 }
