@@ -6,13 +6,12 @@ import { sourceFilesContext } from "~/root";
 import styles from "~/styles/_index.scss?url";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix SPA" },
-    { name: "description", content: "Welcome to Remix (SPA Mode)!" },
-  ];
+  return [{ title: "resume-generator" }];
 };
 
-export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: styles, type: "text/css" },
+];
 
 export default function Index() {
   const { sourceFilesData, setSourceFilesData } =
@@ -57,11 +56,24 @@ export default function Index() {
       <div className="home-header">
         <h1 className="title">履歴書ジェネレーター</h1>
         <p className="description">
-          ※全ての処理はローカル（端末側）で完結するので安全に利用できます
+          ※全ての処理はローカル（端末側）で完結するので安全に利用できます。
+          <br />
+          yamlとpng/jpgのファイル選択後、作成ボタンを押すと履歴書が表示されます。
+          <br />
+          「印刷」からpdfに保存できます。
         </p>
         <p className="description">
-          yamlのサンプルはここからダウンロードしてください
+          yamlのサンプルは
+          <a href="/resumeinfo-sample.yaml" download>
+            ここ
+          </a>
+          からダウンロードしてください
         </p>
+        <div>
+          <Link aria-label="サンプルを見る" to="/sample">
+            <button className="home-button">サンプルを見る</button>
+          </Link>
+        </div>
       </div>
 
       <div className="step">
