@@ -32,7 +32,7 @@ export const links: LinksFunction = () => [
   ...motivationLinks(),
   ...requestsLinks(),
   ...commuteAndDependentLinks(),
-  { rel: "stylesheet", href: styles },
+  { rel: "stylesheet", href: styles, type: "text/css" },
 ];
 
 export default function Preview() {

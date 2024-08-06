@@ -1,3 +1,10 @@
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+}
+
 .resume {
   padding: 2%;
   width: 297mm;
