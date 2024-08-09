@@ -1,0 +1,39 @@
+name:
+  furigana: やまだたろう
+  kanji: 山田太郎
+birthdate: 2000/01/01
+sex: 男
+address1:
+  furigana: 〇〇けん〇〇し〇〇1-1-1
+  postalCode: 123-4567
+  kanji: 〇〇県〇〇市〇〇1-1-1
+phone1: "090xxxxxxxx"
+email1: aaaa@xxxx.com
+address2:
+  furigana: ✕✕けん✕✕し✕✕1-1-1
+  postalCode: 234-5678
+  kanji: ✕✕県✕✕市✕✕1-1-1
+phone2: "080xxxxxxxx"
+email2: bbbb@xxxx.com
+educationWork:
+  - name: 〇〇大学 理学部 物理学科 入学
+    date: 2016/04
+  - name: 〇〇大学大学院 理学研究科 物理学専攻 修了
+    date: 2018/03
+  - name: 株式会社〇〇〇〇 入社
+    date: 2018/04
+licenses:
+  - name: 普通自動二輪免許 取得
+    date: 2024/04
+motivation: |-
+  私は常に新しい知識とスキルを習得することに情熱を持っています。
+  この職務に応募する理由は、自己成長を促進し、プロフェッショナルとしての能力を向上させる機会を得るためです。
+  私は新しい技術やベストプラクティスに常に興味を持ち、積極的に学び続ける姿勢を持っています。この職務に就くことで、自己成長の機会を得るだけでなく、チーム全体の成果に貢献することができると確信しています。
+  以下のサイトを作りました。
+  https://example.com
+requests:
+commuteAndDependent:
+  commuteTime: 約1時間30分
+  numofDependentFamily: 4
+  hasSpouse: 無
+  hasSpousalSupport: 無
