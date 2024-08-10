@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "typecheck": "tsc -b",
     "format": "prettier --check ./{app,tests}/**/*.{ts,tsx}",
-    "format-run": "npx prettier --write ./{app,tests}/**/*.{ts,tsx}"
+    "format-run": "npx prettier --write ./{app,tests}/**/*.{ts,tsx}",
+    "deploy": "yarn build && npx wrangler pages deploy build/client"
   },
   "dependencies": {
     "@remix-run/node": "^2.10.2",
