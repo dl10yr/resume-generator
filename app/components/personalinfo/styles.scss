@@ -20,7 +20,7 @@
       justify-content: center;
       align-items: center;
       border-bottom: 1px solid #000;
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .address1 {
@@ -55,7 +55,7 @@
           display: flex;
           height: 44px;
           padding-left: 4px;
-          font-size: 12px;
+          font-size: 14px;
         }
       }
     }
@@ -75,14 +75,25 @@
       .kanji {
         .up {
           display: flex;
+          justify-content: space-between;
           height: 22px;
 
-          & .label {
-            padding-left: 4px;
+          & .left {
+            display: flex;
+
+            & .label {
+              padding-left: 4px;
+            }
+
+            & .value {
+              padding-left: 4px;
+            }
           }
 
-          & .value {
-            padding-left: 4px;
+          & .right {
+            text-align: right;
+            font-size: 8px;
+            padding-right: 4px;
           }
         }
 
@@ -90,7 +101,7 @@
           display: flex;
           height: 44px;
           padding-left: 4px;
-          font-size: 12px;
+          font-size: 14px;
         }
       }
     }
