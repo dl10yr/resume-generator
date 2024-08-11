@@ -56,7 +56,7 @@ export default function Index() {
       <div className="home-header">
         <h1 className="title">履歴書ジェネレーター</h1>
         <p className="description">
-          ※全ての処理はローカル（端末側）で完結するので安全に利用できます。
+          ※全ての処理はクライアント側（端末側）で完結するので安全に利用できます。
           <br />
           yamlとpng/jpgのファイル選択後、作成ボタンを押すと履歴書が表示されます。
           <br />
