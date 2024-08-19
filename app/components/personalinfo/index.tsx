@@ -67,7 +67,7 @@ export const PersonalInfo: React.FC<PersonalInfoProps> = ({
             <div className="up">
               <div className="left">
                 <div className="label">現住所 </div>
-                <div className="value">〒{address1.postalCode}</div>
+                <div className="value">〒{address2.postalCode}</div>
               </div>
               <div className="right">
                 （現住所以外に連絡を希望する場合に記入）
