@@ -15,7 +15,7 @@ type SourceFilesData = {
 
 type SourceFilesContextData = {
   sourceFilesData: SourceFilesData;
-  setSourceFilesData: (newData: SourceFilesData) => void;
+  setSourceFilesData: (_newData: SourceFilesData) => void;
 };
 
 interface SourceFilesProviderProps {
