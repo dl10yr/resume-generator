@@ -32,6 +32,7 @@
     "@types/react-dom": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^8.45.0",
     "@typescript-eslint/parser": "^8.45.0",
+    "@vanilla-extract/integration": "^8.0.4",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.37.0",
     "eslint-import-resolver-typescript": "^4.4.4",
@@ -44,7 +45,7 @@
     "sass": "^1.93.2",
     "tailwindcss": "^4.1.14",
     "typescript": "^5.9.3",
-    "vite": "^7.1.9",
+    "vite": "5.4.10",
     "vite-tsconfig-paths": "^5.1.4",
     "wrangler": "^4.42.0"
   },
