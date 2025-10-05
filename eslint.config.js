@@ -29,13 +29,13 @@ export default [
         fetch: "readonly",
         File: "readonly",
         FileReader: "readonly",
-        HTMLInputElement: "readonly", 
+        HTMLInputElement: "readonly",
         HTMLImageElement: "readonly",
         Request: "readonly",
         Response: "readonly",
         Headers: "readonly",
         React: "readonly",
-        // Node globals  
+        // Node globals
         process: "readonly",
         Buffer: "readonly",
         __dirname: "readonly",
@@ -43,36 +43,42 @@ export default [
       },
     },
     plugins: {
-      '@typescript-eslint': tseslint,
+      "@typescript-eslint": tseslint,
       react,
-      'react-hooks': reactHooks,
-      'jsx-a11y': jsxA11y,
+      "react-hooks": reactHooks,
+      "jsx-a11y": jsxA11y,
       import: importPlugin,
     },
     rules: {
       ...js.configs.recommended.rules,
       // TypeScript rules - relaxed for unused vars with _ prefix
-      '@typescript-eslint/no-unused-vars': ['warn', { 
-        argsIgnorePattern: '^_',
-        varsIgnorePattern: '^_',
-        ignoreRestSiblings: true
-      }],
-      '@typescript-eslint/no-explicit-any': 'warn',
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          ignoreRestSiblings: true,
+        },
+      ],
+      "@typescript-eslint/no-explicit-any": "warn",
       // Standard rules for unused vars
-      'no-unused-vars': ['warn', { 
-        argsIgnorePattern: '^_',
-        varsIgnorePattern: '^_',
-        ignoreRestSiblings: true
-      }],
-      // React rules  
-      'react/prop-types': 'off',
-      'react/react-in-jsx-scope': 'off',
-      'react/jsx-uses-react': 'off',
+      "no-unused-vars": [
+        "warn",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          ignoreRestSiblings: true,
+        },
+      ],
+      // React rules
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "off",
       // React Hooks rules
       ...reactHooks.configs.recommended.rules,
       // Basic accessibility rules
-      'jsx-a11y/alt-text': 'warn',
-      'jsx-a11y/anchor-is-valid': 'warn',
+      "jsx-a11y/alt-text": "warn",
+      "jsx-a11y/anchor-is-valid": "warn",
     },
     settings: {
       react: { version: "detect" },
@@ -81,6 +87,6 @@ export default [
         { name: "Link", linkAttribute: "to" },
         { name: "NavLink", linkAttribute: "to" },
       ],
-    }
-  }
+    },
+  },
 ];
