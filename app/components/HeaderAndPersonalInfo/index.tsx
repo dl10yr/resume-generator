@@ -1,4 +1,4 @@
-import { LinksFunction } from "@remix-run/node";
+import { LinksFunction } from "react-router";
 import React, { useEffect } from "react";
 
 import styles from "./styles.scss?url";

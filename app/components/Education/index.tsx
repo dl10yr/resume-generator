@@ -1,4 +1,4 @@
-import { LinksFunction } from "@remix-run/node";
+import { LinksFunction } from "react-router";
 import React from "react";
 
 import styles from "./styles.css?url";

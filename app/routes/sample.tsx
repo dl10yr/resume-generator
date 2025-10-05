@@ -1,4 +1,4 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "react-router";
 import { useEffect, useState } from "react";
 import { Education, links as educationLinks } from "~/components/Education";
 import {
