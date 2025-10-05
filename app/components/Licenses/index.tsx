@@ -24,21 +24,25 @@ export const Licenses: React.FC<{ licenses: ResumeTableData }> = ({
   return (
     <div className="licenses">
       <table>
-        <tr>
-          <th>年</th>
-          <th>月</th>
-          <th>免許・資格</th>
-        </tr>
-        {displayLicenses.map((data) => {
-          const [year, month] = data.date.split("/");
-          return (
-            <tr key={data.date}>
-              <td>{year}</td>
-              <td>{month}</td>
-              <td>{data.name}</td>
-            </tr>
-          );
-        })}
+        <thead>
+          <tr>
+            <th>年</th>
+            <th>月</th>
+            <th>免許・資格</th>
+          </tr>
+        </thead>
+        <tbody>
+          {displayLicenses.map((data, index) => {
+            const [year, month] = data.date.split("/");
+            return (
+              <tr key={index}>
+                <td>{year}</td>
+                <td>{month}</td>
+                <td>{data.name}</td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
     </div>
   );

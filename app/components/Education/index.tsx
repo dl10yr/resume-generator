@@ -24,21 +24,25 @@ export const Education: React.FC<{ educationWork: ResumeTableData }> = ({
   return (
     <div className="education">
       <table>
-        <tr>
-          <th>年</th>
-          <th>月</th>
-          <th>学歴・職歴</th>
-        </tr>
-        {displayEducationWork.map((data) => {
-          const [year, month] = data.date.split("/");
-          return (
-            <tr key={data.date}>
-              <td>{year}</td>
-              <td>{month}</td>
-              <td>{data.name}</td>
-            </tr>
-          );
-        })}
+        <thead>
+          <tr>
+            <th>年</th>
+            <th>月</th>
+            <th>学歴・職歴</th>
+          </tr>
+        </thead>
+        <tbody>
+          {displayEducationWork.map((data, index) => {
+            const [year, month] = data.date.split("/");
+            return (
+              <tr key={index}>
+                <td>{year}</td>
+                <td>{month}</td>
+                <td>{data.name}</td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
     </div>
   );
