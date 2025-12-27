@@ -5,5 +5,9 @@ node_modules
 /public/build
 .env
 
+# React Router v7 generated files
+/.react-router
 
 .vscode/mcp.json
+
+tsconfig.tsbuildinfo

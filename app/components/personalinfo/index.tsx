@@ -1,11 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { LinksFunction } from "@remix-run/node";
+import { LinksFunction } from "react-router";
 import React from "react";
 
 import styles from "./styles.scss?url";
 import { ResumeAddress } from "~/lib/resume";
-import { differenceInYears, format, formatDate, parse } from "date-fns";
-import { parseWithOptions } from "date-fns/fp";
+import { differenceInYears, format, parse } from "date-fns";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles, type: "text/css" },
@@ -22,7 +20,6 @@ interface PersonalInfoProps {
   email2: string;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const PersonalInfo: React.FC<PersonalInfoProps> = ({
   birthdate,
   sex,

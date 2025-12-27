@@ -1,5 +1,5 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
+import type { LinksFunction, MetaFunction } from "react-router";
+import { Link } from "react-router";
 import React, { useContext } from "react";
 import { sourceFilesContext } from "~/root";
 

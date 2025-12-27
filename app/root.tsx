@@ -1,10 +1,4 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import "./tailwind.css";
 import { createContext, useState } from "react";
 
@@ -15,7 +9,7 @@ type SourceFilesData = {
 
 type SourceFilesContextData = {
   sourceFilesData: SourceFilesData;
-  setSourceFilesData: (newData: SourceFilesData) => void;
+  setSourceFilesData: (_newData: SourceFilesData) => void;
 };
 
 interface SourceFilesProviderProps {

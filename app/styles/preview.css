@@ -8,12 +8,11 @@
 .resume {
   padding: 2%;
   width: 297mm;
-  height: 210mm;
+  height: 209mm;
   background-color: white;
   box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
-  padding: 10mm;
 
   font-size: 11px;
 }
